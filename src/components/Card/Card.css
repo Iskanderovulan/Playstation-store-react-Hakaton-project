@@ -1,0 +1,79 @@
+.card {
+    padding: 100px 0;
+    border-top: 2px solid gainsboro;
+}
+
+.comment {
+    width: 250px;
+    height: 430px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 1px black;
+    cursor: pointer;
+    transition: 1.2ms;
+
+}
+
+.comment:hover {
+    transform: scale(1.1);
+}
+
+.upper-cont {
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(to left, #E94057, #8A2387);
+}
+
+.image-comment {
+    text-align: center;
+}
+
+.image-comment img {
+    background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translate(0, 45px);
+
+}
+
+.comment img {
+    border: 2px solid purple;
+}
+
+.lower-cont {
+    padding: 1.5rem;
+    margin-top: 40px;
+    height: 300px;
+    text-align: left;
+}
+
+.lower-cont h2 {
+    text-align: center;
+    color: #8A2387;
+}
+
+
+@media (max-width: 1024px) {
+    .card .row {
+        grid-row-gap: 30px;
+
+    }
+
+    .card .col-3 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .card .col-3 {
+        width: 100%;
+
+    }
+}

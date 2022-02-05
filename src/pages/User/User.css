@@ -1,0 +1,21 @@
+.user{
+    padding:50px 0;
+}
+.user__wrap{
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 50px;
+}
+.user__wrap a{
+    font-size: 30px;
+}
+.selected{
+    color:#c4302b;
+}
+
+
+@media (max-width: 576px) {
+    .user__wrap a{
+        font-size: 16px;
+    }
+}

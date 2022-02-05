@@ -1,0 +1,86 @@
+.MuiPaper-root{
+    padding:0;
+
+}
+
+/*.makeStyles-root-1 div{*/
+/*    overflow-x:unset!important;*/
+/*}*/
+/*.react-swipeable-view-container{*/
+/*    will-change: unset !important;*/
+/*    transform: unset !important;*/
+/*}*/
+/*.react-swipeable-view-container div{*/
+/*    !*flex-shrink: unset !important;*!*/
+/*}*/
+/*#full-width-tabpanel-1{*/
+/*    unicode-bidi: unset !important;*/
+/*    direction: unset;*/
+/*}*/
+/*.MuiAppBar-colorDefault{*/
+/*    background-color: #f5f5f5!important;*/
+/*}*/
+.goods{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.goods__main .row{
+   grid-row-gap: 30px;
+}
+.goods__box{
+    border: 2px solid lightgray;
+    padding:20px;
+    border-radius: 20px;
+}
+.goods__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.goods__main button{
+    color: white;
+    background: linear-gradient(to left, #EF629F, #EECDA3, #EF629F);
+    text-decoration: none;
+    padding: 10px 0;
+    width: 100%;
+    background-size: 200%;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    cursor:pointer;
+    margin-top:20px;
+  border:none;
+}
+.goods__main button:hover{
+    background-position: right;
+}
+.goods__name{
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+}
+@media (max-width: 1024px) {
+.col-3{
+    width: 33.3333%;
+}
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+    .col-3{
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-3{
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+.showGoods{
+    padding:50px 0 100px 0;
+    min-height: 80vh;
+}
+.showGoods .row{
+    grid-row-gap: 30px;
+}
+.showGoods__quantity{
+    margin-top:10px;
+}
+.showGoods span{
+    color:darkred;
+    font-weight: bold;
+}

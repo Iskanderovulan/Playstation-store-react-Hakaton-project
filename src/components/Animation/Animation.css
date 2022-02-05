@@ -1,0 +1,84 @@
+
+
+.animation {
+  position: relative;
+  margin: 0 auto;
+  width: 480px;
+  height: 80px;
+  color: #FFF;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.playstation-loader {
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+
+.icon-container {
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 0px;
+  text-align: center;
+  -webkit-animation: icon-anim 4s;
+  -moz-animation: icon-anim 4s;
+  -o-animation: icon-anim 4s;
+  animation: icon-anim 4s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+  animation-timing-function:linear;
+  transform-origin: center center;
+}
+
+.icon.cross{top:4px}
+
+.icon-container:nth-child(1) > .icon{-webkit-animation-delay: 0s}
+.icon-container:nth-child(2) > .icon{-webkit-animation-delay: 0.5s}
+.icon-container:nth-child(3) > .icon{-webkit-animation-delay: 1s}
+.icon-container:nth-child(4) > .icon{-webkit-animation-delay: 1.5s}
+
+@keyframes icon-anim {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    font-size: 30px;
+    transform:rotate(360deg);
+  }
+  30% {
+    transform:rotate(360deg);
+  }
+  100% {
+    font-size: 30px;
+    transform:rotate(360deg);
+  }
+}
+
+.loading-text{
+  position: absolute;
+  top: 25px;
+  left: 90px;
+  padding-left: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}

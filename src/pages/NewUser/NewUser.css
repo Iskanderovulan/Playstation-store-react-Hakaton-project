@@ -1,0 +1,15 @@
+.newuser{
+    min-height: 80vh;
+}
+.newuser button{
+color:darkred;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border:none;
+    outline:none;
+    padding:10px 30px;
+    cursor: pointer;
+}
+.newuser button:hover{
+    background: #c4302b;
+}
